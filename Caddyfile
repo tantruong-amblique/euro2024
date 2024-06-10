@@ -1,7 +1,7 @@
-www.wetten2024.de {
+www.euro2024-tvib.onrender.com {
     reverse_proxy web:8080   
 }
 
-wetten2024.de {
-    redir https://www.wetten2024.de{uri}
+euro2024-tvib.onrender.com {
+    redir https://euro2024-tvib.onrender.com{uri}
 }
