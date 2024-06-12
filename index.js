@@ -15,7 +15,8 @@ const i18next = require("i18next");
 const middleware = require("i18next-http-middleware");
 
 i18next.use(middleware.LanguageDetector).init({
-    fallbackLng: "de",
+    fallbackLng: "vi",
+    defaultLanguage: "vi",
     resources: {
         // en: {
         //     translation: require("./locales/en.json"),
