@@ -7,6 +7,8 @@ const BCRYPT_ROUNDS = 10;
 const { knex } = require("../db");
 const router = require("express-promise-router")();
 
+const rawDataEmails = JSON.parse(config.emailVerified);
+
 const MAIL_TEMPLATE = `Hello {{{name}}},
 thank you for registering for the Euro 2024 Betting Game.
 
@@ -59,8 +61,16 @@ router.post("/register", async (req, res) => {
         return;
     }
 
+    const checkUser = rawDataEmails?.filter(email => email.email.toLocaleLowerCase() === req.body.email.toLocaleLowerCase());
+
+    if(!checkUser?.length) {
+        req.flash('error', 'Vui lòng sử dụng GR-mail để đăng ký');
+        res.redirect('/register');
+        return;
+    }
+
     // Save name and email in flash
-    req.flash("name", req.body.name);
+    req.flash("name", checkUser[0].name);
     req.flash("email", req.body.email);
 
     const encrypted = await bcrypt.hash(req.body.password, BCRYPT_ROUNDS);
@@ -72,7 +82,7 @@ router.post("/register", async (req, res) => {
     try {
         const result = await knex("user_account")
             .insert({
-                name: req.body.name,
+                name: checkUser[0].name,
                 password: encrypted,
                 email: req.body.email,
                 email_confirmed: false,
