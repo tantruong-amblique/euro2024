@@ -1,0 +1,93 @@
+{
+    "register": {
+        "header": "Tài Khoản Mới",
+        "registration_disabled": "Đăng ký người dùng bị vô hiệu hóa!",
+        "registration_failed": "Đăng ký người dùng thất bại!",
+        "name": "Tên:",
+        "name_info": "Độ dài tối đa là 30 ký tự. Tên của bạn sẽ hiển thị với mọi người. Bạn có thể thay đổi tên của mình bất cứ lúc nào.",
+        "email": "Địa chỉ email:",
+        "email_info": "Chúng tôi sẽ gửi một liên kết xác nhận đến tài khoản email của bạn.",
+        "password": "Mật khẩu:",
+        "password_info": "Chúng tôi mã hóa tất cả mật khẩu bằng bcrypt, một trong những thuật toán mã hóa mật khẩu tốt nhất hiện nay.",
+        "submit_button": "Đăng ký"
+    },
+    "highscore": {
+        "friend_info": "Bạn có thể thêm bạn bè bằng cách nhấp vào nút \u2795. Điều này sẽ làm nổi bật họ trong phần tổng quan về trận đấu trực tiếp và quá khứ.",
+        "show_all": "Hiển thị tất cả",
+        "show_only_friends": "Chỉ hiển thị bạn bè",
+        "column": {
+            "name": "Tên",
+            "score": "Điểm",
+            "change": "Thay đổi",
+            "cnt": "CNT",
+            "pts": "PTS"
+        }
+    },
+    "live": {
+        "no_live": "Hiện tại không có trận đấu nào đang diễn ra.",
+        "upcoming_matches_header": "Các trận đấu sắp tới",
+        "friends_without_bets": "Bạn bè không có cược (nhấp để hiển thị)",
+        "all_friends_have_bets": "Tất cả bạn bè của bạn đã đặt cược!",
+        "number_of_bets": "Số lượng cược: {{count}}"
+    },
+    "login": {
+        "title": "Đăng nhập",
+        "failed": "Đăng nhập thất bại!",
+        "email": "Địa chỉ email:",
+        "password": "Mật khẩu:",
+        "forgot_password": "Quên mật khẩu?",
+        "no_account": "Chưa có tài khoản?",
+        "submit_button": "Đăng nhập"
+    },
+    "navbar": {
+        "profile": "Hồ sơ",
+        "my_bets": "Cược của tôi",
+        "live_matches": "Trận đấu trực tiếp",
+        "past_matches": "Trận đấu đã qua",
+        "highscore": "Điểm cao",
+        "settings": "Cài đặt",
+        "logout": "Đăng xuất",
+        "register": "Đăng ký",
+        "login": "Đăng nhập"
+    },
+    "mybets": {
+        "title": "Cược của tôi",
+        "header": "Cược của tôi",
+        "no_bets_info": "Bạn nên đặt cược cho các trận đấu sắp tới!",
+        "edit_disabled": "Bạn không thể chỉnh sửa cược của mình nữa.",
+        "edit_bet_until": "Thay đổi cược của bạn đến {{date}}.",
+        "edit_bet_button": "Chỉnh sửa cược của tôi",
+        "no_team_selected": "Bạn chưa chọn đội nào.",
+        "extra_bet_info": "1 đội cho {{scoreFactor}} điểm.",
+        "extra_bet_info_other": "{{count}} đội cho mỗi đội {{scoreFactor}} điểm."
+    },
+    "extra_bet": {
+        "back_link": "Quay lại Cược của tôi",
+        "max_teams_warning": "Bạn không được phép chọn quá 1 đội.",
+        "max_teams_warning_other": "Bạn không được phép chọn quá {{count}} đội.",
+        "submit_button": "Lưu",
+        "team_info": "Chọn 1 đội cho {{name}}.",
+        "team_info_other": "Chọn {{count}} đội cho {{name}}.",
+        "score_info": "Đối với mỗi đội đúng bạn sẽ nhận được {{scoreFactor}} điểm."
+    },
+    "settings": {
+        "title": "Cài đặt",
+        "name": "Tên (3 đến 30 ký tự)",
+        "submit_button": "Lưu"
+    },
+    "intro": {
+        "title": "Giới thiệu",
+        "welcome": "Chào mừng đến với Euro 2024 Betting Game!",
+        "description": "Trên trang này, bạn có thể đặt cược cho các trận đấu của euro 2024. Hoàn toàn miễn phí và bạn không thể thực sự giành được gì ngoài danh tiếng và vinh quang. Trang web này được thiết kế như một cuộc thi: Ai là người dự đoán trận đấu bóng đá tốt hơn? Hãy thi đấu với bạn bè và những người ngẫu nhiên!",
+        "quickstart": "Bắt đầu nhanh",
+        "my_bets_title": "Đặt cược",
+        "my_bets_description": "Đặt số lượng bàn thắng cho đội nhà và đội khách trong các trận đấu sắp tới. Bạn không thể đặt cược cho bất kỳ trận đấu nào đã bắt đầu.",
+        "my_bets_link": "Đi đến Cược của tôi",
+        "live_matches_title": "Trận đấu trực tiếp",
+        "live_matches_description": "Xem các trận đấu đang diễn ra. Bạn có thể xem tất cả các cược mà người dùng khác đã đặt.",
+        "live_matches_link": "Xem Trận đấu trực tiếp",
+        "highscore_title": "Điểm cao",
+        "highscore_description": "Xem bạn có bao nhiêu điểm và bạn giỏi như thế nào so với bạn bè và người dùng khác.",
+        "highscore_link": "Xem Điểm cao"
+    }
+}
