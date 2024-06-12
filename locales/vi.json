@@ -12,7 +12,7 @@
         "submit_button": "Đăng ký"
     },
     "highscore": {
-        "friend_info": "Bạn có thể thêm bạn bè bằng cách nhấp vào nút \u2795. Điều này sẽ làm nổi bật họ trong phần tổng quan về trận đấu trực tiếp và quá khứ.",
+        "friend_info": "Bạn có thể thêm bạn bè bằng cách nhấp vào nút +. Điều này sẽ làm nổi bật họ trong phần tổng quan về trận đấu trực tiếp và quá khứ.",
         "show_all": "Hiển thị tất cả",
         "show_only_friends": "Chỉ hiển thị bạn bè",
         "column": {
