@@ -64,8 +64,53 @@
             </div>
     </div>
 
+    <h4 class="mt-3">Thông tin chung</h4>
+    <div class="accordion" id="generalInfo">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" aria-expanded="true" data-target="#totalMoney">
+                        Tỉ lệ cược
+                    </button>
+                </h5>
+            </div>
+            <div id="totalMoney" class="collapse show" data-parent="#generalInfo">
+                <div class="card-body">
+                    <p><b>5k</b> cho mỗi trận vòng bảng ==> 36 x 5 = <b>180k</b></p>
+                    <p><b>5k {{> score_factor 2}}</b> cho mỗi trận vòng 16 ==> 8 x (5x2) = <b>80k</b></p>
+                    <p><b>5k {{> score_factor 4}}</b> cho mỗi trận vòng tứ kết ==> 4 x (5x4) = <b>80k</b></p>
+                    <p><b>5k {{> score_factor 6}}</b> cho mỗi trận vòng bán kết ==> 2 x (5x6) = <b>60k</b></p>
+                    <p><b>5k {{> score_factor 8}}</b> cho trận vòng chung kết ==> 1 x (5x8) = <b>40k</b></p>
+                    <p>Tổng tiền cho mỗi người chơi là: <b>440k</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" aria-expanded="true" data-target="#percentAward">
+                        Cơ cấu giải thưởng (dựa trên tổng số điểm sau mùa giải)
+                    </button>
+                </h5>
+            </div>
+            <div id="percentAward" class="collapse show" data-parent="#generalInfo">
+                <div class="card-body">
+                    <ul>
+                        <li>50% quỹ: nhậu</li>
+                        <li>25%: hạng I</li>
+                        <li>15%: hạng II</li>
+                        <li>10%: hạng III</li>
+                    </ul>
+                    <div class="alert alert-danger" role="alert">
+                        Giải thưởng sẽ được trao tận tay khi đi nhậu, ai vắng mặt thì tiền thưởng sẽ sung công quỹ cho bữa nhậu đó nhé mọi người!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <h4 class="mt-3">Câu hỏi thường gặp</h4>
-    <div class="accordion" id="faq">
+    <div class="accordion mb-5" id="faq">
         <div class="card">
             <div class="card-header">
                 <h5 class="mb-0">
