@@ -6,7 +6,7 @@ module.exports = {
 
     // Timezone offset used for all datetime outputs (by moment.js)
     // Defaults to CEST (Central European Summer Time)
-    timezone: "Europe/Berlin",
+    timezone: "Asia/Ho_Chi_Minh",
 
     // Set to true if the node runs behind a proxy that sets X-Forwarded-* headers
     trustProxy: process.env.TRUST_PROXY === "1",
@@ -53,3 +53,5 @@ if (process.env.MAIL_SOLUTION === "smtp") {
 
 module.exports.disableUserRegistration =
     process.env.DISABLE_USER_REGISTRATION === "1";
+
+module.exports.emailVerified = process.env.EMAIL_VERIFIED || null;
