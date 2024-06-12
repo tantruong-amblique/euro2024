@@ -1,7 +1,7 @@
-www.euro2024-tvib.onrender.com {
+www.euro2024-sfj5.onrender.com {
     reverse_proxy web:8080   
 }
 
-euro2024-tvib.onrender.com {
-    redir https://euro2024-tvib.onrender.com{uri}
+euro2024-sfj5.onrender.com {
+    redir https://euro2024-sfj5.onrender.com{uri}
 }
