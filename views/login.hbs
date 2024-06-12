@@ -31,13 +31,13 @@
             <button class="btn btn-primary btn-block" type="submit">
                 {{ t "login.submit_button" }}
             </button>
-            <small class="form-text text-muted">
-            {{ t "login.forgot_password" }} <a href="/password_recovery">Recover your password</a> with your email address.<br>
-            {{ t "login.no_account" }} <a href="/register">Register</a> or use one of the social logins.
-            </small>
+            {{!-- <small class="form-text text-muted">
+            {{ t "login.forgot_password" }} <a href="/password_recovery">Khôi phục mật khẩu</a> bằng địa chỉ email của bạn.<br>
+            {{ t "login.no_account" }} <a href="/register">Đăng ký</a> hoặc sử dụng một trong những đăng nhập mạng xã hội.
+            </small> --}}
         </div>
     </form>
-    {{#if enabledFacebook}}
+    {{!-- {{#if enabledFacebook}}
         <a class="btn btn-block btn-lg btn-secondary" href="/auth/facebook">
             <i class="fa fa-facebook"></i> Sign in with Facebook
         </a>
@@ -54,7 +54,7 @@
         <div class="text-muted small">
             Google Login disabled.
         </div>
-    {{/if}}
+    {{/if}} --}}
 </div>
 {{/inline}}
 {{/layout}}
