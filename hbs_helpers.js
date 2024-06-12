@@ -3,7 +3,7 @@ const hbs = require("hbs");
 const config = require("./config");
 
 module.exports = () => {
-    moment.updateLocale("vi", {
+    moment.updateLocale("en", {
         calendar: {
             lastDay: "[Yesterday at] H:mm",
             sameDay: "[Today at] H:mm",
