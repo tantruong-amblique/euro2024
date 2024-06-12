@@ -17,12 +17,12 @@ const middleware = require("i18next-http-middleware");
 i18next.use(middleware.LanguageDetector).init({
     fallbackLng: "vi",
     resources: {
-        en: {
-            translation: require("./locales/en.json"),
-        },
-        de: {
-            translation: require("./locales/de.json"),
-        },
+        // en: {
+        //     translation: require("./locales/en.json"),
+        // },
+        // de: {
+        //     translation: require("./locales/de.json"),
+        // },
         vi: {
             translation: require("./locales/vi.json"),
         },
