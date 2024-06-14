@@ -5,9 +5,9 @@ const config = require("./config");
 module.exports = () => {
     moment.updateLocale("vi", {
         calendar: {
-            lastDay: "[Yesterday at] H:mm",
-            sameDay: "[Today at] H:mm",
-            nextDay: "[Tomorrow at] H:mm",
+            lastDay: "[Hôm qua at] H:mm",
+            sameDay: "[Hôm nay at] H:mm",
+            nextDay: "[Ngày mai at] H:mm",
             lastWeek: "[Last] dddd [at] H:mm",
             nextWeek: "dddd [at] H:mm",
             sameElse: "L",
