@@ -70,7 +70,7 @@ router.post("/register", async (req, res) => {
     }
 
     // Save name and email in flash
-    req.flash("name", checkUser[0].name);
+    req.flash("name", checkUser[0].fullName);
     req.flash("email", req.body.email);
 
     const encrypted = await bcrypt.hash(req.body.password, BCRYPT_ROUNDS);
@@ -82,7 +82,7 @@ router.post("/register", async (req, res) => {
     try {
         const result = await knex("user_account")
             .insert({
-                name: checkUser[0].name,
+                name: checkUser[0].fullName,
                 password: encrypted,
                 email: req.body.email,
                 email_confirmed: false,
