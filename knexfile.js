@@ -7,6 +7,7 @@ module.exports = {
             database: process.env.PGDATABASE,
             user: process.env.PGUSER,
             password: process.env.PGPASSWORD,
+            sslmode: "require",
             application_name: "knex-development"
         },
         migrations: {
