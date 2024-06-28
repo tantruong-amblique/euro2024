@@ -1,7 +1,7 @@
-www.euro2024-sfj5.onrender.com {
+www.stg-euro2024.onrender.com {
     reverse_proxy web:8080   
 }
 
-euro2024-sfj5.onrender.com {
+stg-euro2024.onrender.com {
     redir https://euro2024-sfj5.onrender.com{uri}
 }
