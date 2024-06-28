@@ -1,6 +1,6 @@
 module.exports = {
     development: {        
-        client: "postgresql",
+        client: "pg",
         connection: {
             connectionString: process.env.DATABASE_URL,
             host: process.env.PGHOST,
