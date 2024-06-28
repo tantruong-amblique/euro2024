@@ -14,6 +14,9 @@ const { knex } = require("./db");
 const i18next = require("i18next");
 const middleware = require("i18next-http-middleware");
 
+consol.log(knex);
+console.log(config);
+
 i18next.use(middleware.LanguageDetector).init({
     fallbackLng: "vi",
     defaultLanguage: "vi",
