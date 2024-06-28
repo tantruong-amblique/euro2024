@@ -1,30 +1,5 @@
 module.exports = {
     development: {        
-        // client: "pg",
-        // connection: {
-        //     connectionString: process.env.DATABASE_URL,
-        //     host: process.env.PGHOST,
-        //     port: process.env.PGPORT,
-        //     database: process.env.PGDATABASE,
-        //     user: process.env.PGUSER,
-        //     password: process.env.PGPASSWORD,
-        //     sslmode: 'require',
-        //     ssl: true,
-        //     application_name: "knex-development"
-        // },
-
-        // client: 'pg',
-        // connection: process.env.DATABASE_URL || {
-        //     host: process.env.PGHOST,
-        //     port: process.env.PGPORT,
-        //     database: process.env.PGDATABASE,
-        //     user: process.env.PGUSER,
-        //     password: process.env.PGPASSWORD,
-        //     sslmode: 'require',
-        //     ssl: true,
-        //     application_name: "knex-development"
-        // },
-                
         client: 'postgresql',
         connection: {
             connectionString: process.env.DATABASE_URL,
@@ -37,7 +12,7 @@ module.exports = {
         migrations: {
             tableName: "knex_migrations",
         },
-        debug: true,
+        debug: false,
         asyncStackTraces: true,
     },
     production: {
