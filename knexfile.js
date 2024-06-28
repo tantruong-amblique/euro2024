@@ -2,17 +2,14 @@ module.exports = {
     development: {        
         client: "postgresql",
         connection: {
+            connectionString: process.env.DATABASE_URL,
             host: process.env.PGHOST,
             port: process.env.PGPORT,
             database: process.env.PGDATABASE,
             user: process.env.PGUSER,
-            // username: process.env.PGUSER,
             password: process.env.PGPASSWORD,
             sslmode: 'require',
             ssl: true,
-            connection: {
-                options: `project=${process.env.ENDPOINT_ID}`,
-              },
             application_name: "knex-development"
         },
         
