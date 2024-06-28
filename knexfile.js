@@ -12,8 +12,10 @@ module.exports = {
         //     ssl: true,
         //     application_name: "knex-development"
         // },
-        client: 'pg',
-        connection: process.env.DATABASE_URL,
+        client: 'postgresql',
+        connection: {
+             connectionString: process.env.DATABASE_URL
+        },
         pool: {
             min: 0,
             max: 10,
