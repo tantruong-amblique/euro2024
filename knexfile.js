@@ -15,12 +15,12 @@ module.exports = {
         
         pool: {
             min: 0,
-            max: 1,
+            max: 10,
         },
         migrations: {
             tableName: "knex_migrations",
         },
-        debug: false,
+        debug: true,
         asyncStackTraces: true,
     },
     production: {
