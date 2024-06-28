@@ -3,5 +3,5 @@ www.stg-euro2024.onrender.com {
 }
 
 stg-euro2024.onrender.com {
-    redir https://euro2024-sfj5.onrender.com{uri}
+    redir https://stg-euro2024.onrender.com{uri}
 }
